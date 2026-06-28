@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "difficulty": "Easy",
+        "topic": "Architecture",
+        "question": "What was the purpose of the Great Bath at Mohenjo-daro?",
+        "expected_answer": "The Great Bath was a large public bathing structure, likely used for ritual or ceremonial bathing.",
+        "Assistant_Response": "The Great Bath at Mohenjo-daro was likely related to the religious life of the city or its rulers, and its elaborate and prominent position on the citadel suggests it had an official status, possibly for ceremonial cleansings.",
+        "Source": 59
+    },
+    {
+        "id": 2,
+        "difficulty": "Easy",
+        "topic": "Cities",
+        "question": "Name two major cities of the Indus Civilization discussed in the book.",
+        "expected_answer": "Harappa and Mohenjo-daro.",
+        "Assistant_Response": "Mohenjo-daro and Harappa are two major cities of the Indus Civilization.",
+        "Source": 157
+    },
+    {
+        "id": 3,
+        "difficulty": "Medium",
+        "topic": "Trade",
+        "question": "How did the Indus Civilization conduct trade with other regions?",
+        "expected_answer": "The civilization traded using land and sea routes with regions such as Mesopotamia, transporting goods like beads, metals and textiles.",
+        "Assistant_Response": "The Indus Civilization conducted trade with other regions, including Sumeria, through the Persian Gulf. This trade seems to have culminated under Sargon of Agade around 2350 B.C. and was revived under King Ur-Nammu. The Indus Valley was also connected to other regions through ancient trade routes, such as the one that lies in the direction of Kandahar.",
+        "Source": 100
+    },
+    {
+        "id": 4,
+        "difficulty": "Medium",
+        "topic": "Urban Planning",
+        "question": "What features of Indus cities demonstrate advanced urban planning?",
+        "expected_answer": "Grid-pattern streets, drainage systems, standardized bricks, wells, and organized residential layouts demonstrate advanced urban planning.",
+        "Assistant_Response": "The features of Indus cities that demonstrate advanced urban planning include a grid-plan, with the citadel being a roughly parallelogram shape, approximately 460 yards from north to south and 215 yards from east to west. The city also appears to have had a carefully engineered civic layout, with a possible canal or branch of the river between the citadel and the main body of the town. Additionally, the city had a well-planned system of streets, lanes, and dwellings, with each house having a uniform design and being entered through an oblique passage designed to secure privacy. The presence of a compound wall and brick-paved floors also suggests a high level of urban planning.",
+        "Source": 49
+    },
+    {
+        "id": 5,
+        "difficulty": "Hard",
+        "topic": "Society",
+        "question": "What evidence suggests that the Indus Civilization had a well-organized society?",
+        "expected_answer": "Evidence includes standardized construction, planned cities, drainage systems, specialized crafts, trade networks, and administrative organization.",
+        "Assistant_Response": "The features of Indus cities, such as a grid-plan, carefully engineered civic layout, well-planned system of streets, lanes, and dwellings, and the presence of a compound wall and brick-paved floors, suggest a high level of urban planning and a well-organized society.",
+        "Source": 160
+    }
+]
