@@ -1,5 +1,6 @@
 {
     "model": "llama-3.3-70b-versatile",
     "temperature": 0.2,
-    "max_tokens": 512
+    "max_tokens": 512,
+    "prompt":"..\\prompts\\hind_agent\\system_version_01.txt"
 }
