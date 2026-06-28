@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "difficulty": "Easy",
+    "topic": "Architecture",
+    "question": "What was the purpose of the Great Bath at Mohenjo-daro?",
+    "expected_answer": "The Great Bath was a large public bathing structure, likely used for ritual or ceremonial bathing."
+  },
+  {
+    "id": 2,
+    "difficulty": "Easy",
+    "topic": "Cities",
+    "question": "Name two major cities of the Indus Civilization discussed in the book.",
+    "expected_answer": "Harappa and Mohenjo-daro."
+  },
+  {
+    "id": 3,
+    "difficulty": "Medium",
+    "topic": "Trade",
+    "question": "How did the Indus Civilization conduct trade with other regions?",
+    "expected_answer": "The civilization traded using land and sea routes with regions such as Mesopotamia, transporting goods like beads, metals and textiles."
+  },
+  {
+    "id": 4,
+    "difficulty": "Medium",
+    "topic": "Urban Planning",
+    "question": "What features of Indus cities demonstrate advanced urban planning?",
+    "expected_answer": "Grid-pattern streets, drainage systems, standardized bricks, wells, and organized residential layouts demonstrate advanced urban planning."
+  },
+  {
+    "id": 5,
+    "difficulty": "Hard",
+    "topic": "Society",
+    "question": "What evidence suggests that the Indus Civilization had a well-organized society?",
+    "expected_answer": "Evidence includes standardized construction, planned cities, drainage systems, specialized crafts, trade networks, and administrative organization."
+  }
+]
