@@ -1,22 +1,4 @@
 INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: thenlper/gte-large
 INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cpu
-ERROR:asyncio:Exception in callback _ProactorBasePipeTransport._call_connection_lost()
-handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
-Traceback (most recent call last):
-  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
-    self._context.run(self._callback, *self._args)
-    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
-    self._sock.shutdown(socket.SHUT_RDWR)
-    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-ERROR:asyncio:Exception in callback _ProactorBasePipeTransport._call_connection_lost()
-handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
-Traceback (most recent call last):
-  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
-    self._context.run(self._callback, *self._args)
-    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
-    self._sock.shutdown(socket.SHUT_RDWR)
-    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
