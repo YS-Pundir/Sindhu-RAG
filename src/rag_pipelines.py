@@ -17,8 +17,8 @@ CONVERSATION_PATH = PROJECT_ROOT / "Storage" / "conversation" / "conversation_hi
 
 import json
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
-
+#from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 # For Api Rate limiting
 import logging
 from tenacity import (
@@ -47,7 +47,7 @@ Chroma_Path=str(VECTOR_DB)
         
 Top_k=3# retrieving only 3 chunks because of api costs
 collection="sindh-10k-collection"
-embeddings=SentenceTransformerEmbeddings(model_name=Embendding_Model_Name)
+embeddings=HuggingFaceEmbeddings(model_name=Embendding_Model_Name)
 
 vectore_Store=Chroma(
     collection_name=collection,
@@ -162,7 +162,7 @@ def generate_answer(user_message,system_message):
 # will use this function in case want to see the metadata for inquiry
 def rag_answer(user_query, retriever):
     """End-to-end: retrieve → build messages → generate → return audit bundle."""
-    retrieved = retrieve_chunks
+    retrieved = retrieve_chunks(user_query,retriever)
     user_message = build_user_message(user_query, retrieved)
     answer = generate_answer(SYSTEM_MESSAGE)
     return {"answer": answer, "retrieved_chunks": retrieved, "user_message": user_message}
@@ -229,5 +229,6 @@ def main():
 
     if turn_count == MAX_STEPS:
         print(f"\nMaximum turns ({MAX_STEPS}) reached. Chat session ended.")
+
 
 main()
