@@ -1,7 +1,8 @@
 
 
 import streamlit as st
-from rag_pipelines import generate_answer,retrieve_chunks,retriever,build_user_message,SYSTEM_MESSAGE
+from rag_pipelines import generate_answer,retrieve_chunks,retriever,build_user_message,loading_prompt,bundle
+SYSTEM_MESSAGE = loading_prompt(bundle).strip()
 
 
 # 1. Setup the UI title
