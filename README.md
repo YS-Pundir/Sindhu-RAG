@@ -166,8 +166,8 @@ SINDHU-RAG/
 
 <p align="center">
 
-<img src="c:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-29 141329.png" width="45%">
-<img src="c:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-29 141343.png" width="45%">
+<img src="D:\Sindhu-RAG\assets\Screenshot 2026-06-29 141329.png" width="45%">
+<img src="D:\Sindhu-RAG\assets\Screenshot 2026-06-29 141343.png" width="45%">
 
 </p>
 
