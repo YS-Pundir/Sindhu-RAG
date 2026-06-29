@@ -1,16 +1,37 @@
+
+
 import streamlit as st
+from rag_pipelines import generate_answer,retrieve_chunks,retriever,build_user_message,SYSTEM_MESSAGE
 
-# --- Streamlit UI ---
-st.title("ABB Manuals RAG Assistant")
-st.markdown("Ask questions about the ABB ACS880 drive manual.")
 
-user_query = st.text_input("Enter your question here:", "My ACS880 drive just tripped with fault code 2310. What does this mean and what should I check?")
+# 1. Setup the UI title
+st.title("Ancient Chatbot")
 
-if st.button("Get Answer"):
-    if user_query:
-        with st.spinner("Finding the answer..."):
-            answer = rag_qa(user_query)
-            st.write("**Answer:**")
-            st.write(answer)
-    else:
-        st.warning("Please enter a question.")
+# 2. Initialize chat history in session state if it doesn't exist
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# 3. Display chat messages from history on app rerun
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+# 4. Accept user input
+if prompt := st.chat_input("Ask about the Indus Valley Civilisation report"):
+    # Display user message
+    with st.chat_message("user"):
+        st.markdown(prompt)
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    context =retrieve_chunks(prompt,retriever)
+    user_message_content = build_user_message(prompt, context)
+
+    # 5. Generate response using your existing RAG logic
+    with st.chat_message("assistant"):
+        with st.spinner("Thinking..."):
+            # Ensure your rag_answer function returns a dict with "answer"
+            result = generate_answer(user_message_content,SYSTEM_MESSAGE)
+            response = result
+            st.markdown(response)
+    
+    # Add assistant response to history
+    st.session_state.messages.append({"role": "assistant", "content": response})
