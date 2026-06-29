@@ -5,7 +5,7 @@ Production-Grade RAG Pipeline for Historical Knowledge Systems
 </h3>
 
 <p align="center">
-  <img src="assets/banner.png" width="100%">
+  <img src="assets\Screenshot 2026-06-29 145944.png" width="100%">
 </p>
 
 ---
