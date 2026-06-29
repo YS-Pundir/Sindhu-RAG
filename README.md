@@ -5,7 +5,7 @@ Production-Grade RAG Pipeline for Historical Knowledge Systems
 </h3>
 
 <p align="center">
-  <img src="assets\Screenshot 2026-06-29 145944.png" width="100%">
+  <img src="assets/Screenshot 2026-06-29 145944.png" width="100%">
 </p>
 
 ---
@@ -61,7 +61,7 @@ Production-Grade RAG Pipeline for Historical Knowledge Systems
 # 🏗️ Architecture
 
 <p align="center">
-  <img src="assets/architecture.png" width="95%">
+  
 </p>
 
 ```mermaid
