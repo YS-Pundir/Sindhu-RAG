@@ -2,3 +2,4 @@ INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransform
 INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cpu
 INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
