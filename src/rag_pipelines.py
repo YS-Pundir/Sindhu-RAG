@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 load_dotenv()
 from groq import Groq
 api_key=os.getenv("api_key")
-GROQ_MODEL= "llama-3.3-70b-versatile"
 client=Groq(api_key=api_key)
 
 from pathlib import Path
